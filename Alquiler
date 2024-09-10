@@ -1,0 +1,96 @@
+#include <iostream>
+#include <conio.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main(){
+	
+	char tipo;
+	
+	int D, TD, KM, TKM, T;
+	
+	cout<<"Ingrese el tipo de carros que se alquilaron\n";
+	
+	cout<<"[C]hicos\n[M]edianos\n[G]randes\n";
+	
+	cin>>tipo;
+	
+	switch(tipo){
+		
+		case 'c': case 'C':
+			
+			cout<<"Se ingreso un carro chiquito\n";
+			
+			cout<<"Ingrese el numero de dias que el heviculo estuvo alquilado: ";
+			
+			cin>>D;
+			
+			TD = D * 15;
+			
+			cout<<"Ingrese los Kilometrso recorridos: ";
+			
+			cin>>KM;
+			
+			TKM = 20 * KM;
+			
+			T = TD + TKM;
+			
+			cout<<"El cliente debera: "<<T;
+			
+			break;
+			
+		case 'M': case 'm':
+			
+			cout<<"Se ingreso un carro mediano\n";
+			
+			cout<<"Ingrese el numero de dias que el heviculo estuvo alquilado: ";
+			
+			cin>>D;
+			
+			TD = D * 20;
+			
+			cout<<"Ingrese los Kilometrso recorridos: ";
+			
+			cin>>KM;
+			
+			TKM = 30 * KM;
+			
+			T = TD + TKM;
+			
+			cout<<"El cliente debera: "<<T;
+			
+			break;
+			
+		case 'G': case 'g':
+			
+			cout<<"Se ingreso un carro grande\n";
+			
+			cout<<"Ingrese el numero de dias que el heviculo estuvo alquilado: ";
+			
+			cin>>D;
+			
+			TD = D * 30;
+			
+			cout<<"Ingrese los Kilometrso recorridos: ";
+			
+			cin>>KM;
+			
+			TKM = 40 * KM;
+			
+			T = TD + TKM;
+			
+			cout<<"El cliente debera: "<<T;
+			
+			break;
+			
+		default:
+			
+			cout<<"Error, carro desconocido";
+			
+			break;
+			
+	}
+	
+	return 0;
+}
